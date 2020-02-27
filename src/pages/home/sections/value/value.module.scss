@@ -5,6 +5,7 @@ $breakpointOne: 940;
 .value {
   display: flex;
   position: relative;
+  overflow: hidden;
 
   .value-img {
     position: absolute;
