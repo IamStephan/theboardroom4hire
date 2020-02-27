@@ -1,0 +1,36 @@
+@import '../../utils/globals.scss';
+
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: $light;
+  padding: #{$padding * 2}px;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding 200ms ease-in-out, box-shadow 200ms ease-in-out;
+
+  &.scrolled {
+    padding: #{$padding}px;
+    box-shadow: 0px 0px 10px 0px rgba($dark, 0.75);
+  }
+
+  .logo {
+    .avatar {
+      width: 50px;
+      height: 50px;
+      background-color: $primary;
+      color: $light;
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    
+    .actions-group {
+      margin-right: #{$margin}px;
+    }
+  }
+}

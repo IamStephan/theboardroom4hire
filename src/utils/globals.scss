@@ -1,0 +1,57 @@
+// Colors
+$primary: #015196;
+$secondary: #FF8A00;
+$dark: #282828;
+$light: #FAFAFA;
+
+// Dimensions
+$clamp: 1200;
+$minClamp: 300;
+
+// Spacing
+$padding: 10;
+$margin: 10;
+
+// Breakpoints
+// tablet
+$tablet: 768;
+$phone: 420;
+
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  dark: $dark;
+
+  clamp: $clamp;
+
+  padding: $padding;
+  margin: $margin;
+
+  tablet: $tablet;
+  phone: $phone;
+}
+
+@function FluidText($minsize, $maxSize) {
+  @return calc(#{$minsize}px + #{$maxSize - $minsize} * ((100vw - #{$minClamp}px) / #{$clamp - $minsize}));
+}
+
+@mixin FontFamily($type) {
+  @if $type == 'h' {
+    font-family: 'Cormorant Garamond', Arial, Helvetica, sans-serif;
+  } @else {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+}
+
+@mixin TitleFont {
+  font-family: 'Cormorant Garamond', Arial, Helvetica, sans-serif;
+}
+
+@mixin header {
+  text-align: center;
+  @include FontFamily('h');
+  font-size: FluidText(25, 35);
+  padding-top: 75px;
+  padding-bottom: 10px;
+}

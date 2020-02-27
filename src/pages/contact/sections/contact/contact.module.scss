@@ -1,0 +1,68 @@
+@import '../../../../utils/globals.scss';
+
+$breakpointOne: 675;
+
+.contact {
+  margin: #{$margin}px;
+
+  .header {
+    text-align: center;
+    @include TitleFont;
+    font-size: 2.75rem;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: $dark;
+  }
+
+  .info {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+
+    .left {
+      flex: 1;
+      margin: #{$margin}px;
+
+      .info-title {
+        @include TitleFont;
+        font-size: 1.8rem;
+        margin-bottom: #{$margin}px;
+        color: $dark;
+      }
+
+      .info-content {
+        color: $dark;
+        margin-bottom: #{$margin * 3}px;
+      }
+
+      .info-details {
+        display: flex;
+        flex-direction: column;
+
+        .info-details-item:not(:last-child) {
+          margin-bottom: #{$margin * 2}px;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: #{$breakpointOne}px) {
+  .contact {
+    .info {
+      flex-direction: column;
+      
+      .left {
+        margin-bottom: #{$margin * 2}px;
+      }
+      .right {
+        height: 300px;
+      }
+    }
+  }
+}

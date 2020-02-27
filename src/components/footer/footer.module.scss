@@ -1,0 +1,54 @@
+@import '../../utils/globals.scss';
+
+$breakpointOne: 440;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: #{$padding}px;
+
+  .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: #{$padding}px;
+
+    .footer-title {
+      @include TitleFont;
+      font-size: 1.75rem;
+    }
+
+    .actions {
+
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: flex-end;
+    padding: #{$padding}px;
+
+    .legal {
+
+    }
+  }
+}
+
+@media (max-width: #{$breakpointOne}px) {
+  .footer {
+    .top {
+      flex-direction: column;
+
+      .footer-title {
+        margin-bottom: #{$margin}px;
+      }
+    }
+  }
+
+  .bottom {
+    .legal {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import '../../../../utils/globals.scss';
+
+$breakpointOne: 800;
+$breakpointTwo: 500;
+
+.features-container {
+  margin: #{$margin}px;
+
+  .header {
+    text-align: center;
+    @include TitleFont;
+    font-size: 2.75rem;
+    padding-top: 75px;
+    padding-bottom: 15px;
+    color: $dark;
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+
+    .features-item-container {
+      flex-grow: 1;
+      flex-basis: calc(100% / 3);
+      display: flex;
+      justify-content: center;
+
+      .features-item {
+        max-width: 300px;
+        margin: #{$margin}px;
+        margin-bottom: #{$margin * 3}px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .features-item-img {
+          width: 60px;
+          height: 60px;
+          margin-bottom: #{$margin}px;
+        }
+
+        .features-item-title {
+          @include TitleFont;
+          text-align: center;
+          font-size: 1.5rem;
+          margin-bottom: #{$margin}px;
+          color: $dark;
+        }
+
+        .features-item-content {
+          text-align: center;
+          font-size: 0.85rem;
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: #{$breakpointOne}px) {
+  .features-container {
+    .features {
+      .features-item-container {
+        flex-basis: calc(100% / 2);
+      }
+    }
+  }
+}
+
+@media (max-width: #{$breakpointTwo}px) {
+  .features-container {
+    .features {
+      .features-item-container {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

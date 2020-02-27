@@ -1,0 +1,126 @@
+@import '../../../../utils/globals.scss';
+
+$breakpointOne: 940;
+$breakpointTwo: 585;
+
+.cta-container {
+  background-color: $primary;
+  margin-top: 75px;
+
+  .cta {
+    position: relative;
+    padding: #{$padding}px;
+    display: flex;
+    align-items: center;
+
+    .left {
+      flex: 3;
+      margin: #{$margin}px;
+
+      .header {
+        @include TitleFont;
+        color: $light;
+        font-size: FluidText(45, 55);
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+
+      .subheader {
+        font-size: FluidText(16, 20);
+        color: $light;
+      }
+
+      .divider {
+        background-color: rgba($light, 0.25);
+        margin: #{$margin}px;
+      }
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+
+        .info-item {
+          color: $light;
+        }
+      }
+    }
+
+    .right {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .form-box {
+        min-width: 300px;
+        background-color: $primary;
+        border-radius: 5px;
+        padding: #{$padding * 2}px;
+        margin: #{$margin * 2}px;
+        color: $light;
+        flex-basis: 400px;
+
+        .form-title {
+          @include TitleFont;
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: #{$margin}px;
+        }
+
+        .form {
+          .item:not(:last-child) {
+            margin-bottom: #{$margin}px;
+          }
+          .dual {
+            display: flex;
+
+            .item {
+              flex: 1;
+
+              &:first-child {
+                margin-right: #{$margin / 2}px;
+              }
+
+              &:last-child {
+                margin-left: #{$margin / 2}px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: #{$breakpointOne}px) {
+  .cta-container {
+    .cta {
+      flex-direction: column;
+      .left {
+        .header {
+          text-align: center;
+        }
+        .subheader {
+          text-align: center;
+        }
+        .info {
+          .info-item {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: #{$breakpointTwo}px) {
+  .cta-container {
+    .cta {
+      .left {
+        .info {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
