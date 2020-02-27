@@ -21,7 +21,6 @@ const stores = {
 const Home = loadable({
   loader: () => import('./pages/home/home'),
   loading: Loader,
-  timeout: 1000,
 })
 
 const Contact = loadable({
