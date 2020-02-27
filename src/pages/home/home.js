@@ -12,7 +12,9 @@ import CTA from './sections/cta/cta';
 export default class Home extends PureComponent {
   render() {
     return (
-      <Page>
+      <Page
+        title='Home | The Boardroom 4 Hire'
+      >
         <Value />
         <Benefit />
         <Venue />
