@@ -130,7 +130,7 @@ export default class Benefit extends PureComponent {
                       transform: `translateX(${props.xPos}%)`
                     }}
                   >
-                    <img alt='Meaningful discussions are hard to maintain' src={require('../../../../static/images/slide_1.jpg')} className={styles['carousel-img']} />
+                    <img alt='Meaningful discussions are hard to maintain' src={require('../../../../static/images/production/slide_1.jpg')} className={styles['carousel-img']} />
                     <div className={styles['left']}>
                       <h3 className={styles['carousel-title']}>
                         Meaningful discussions are hard to maintain
@@ -157,7 +157,7 @@ export default class Benefit extends PureComponent {
                       transform: `translateX(${props.xPos}%)`
                     }}
                   >
-                    <img alt='Conveying your message is essential' src={require('../../../../static/images/slide_2.jpg')} className={styles['carousel-img']} />
+                    <img alt='Conveying your message is essential' src={require('../../../../static/images/production/slide_2.jpg')} className={styles['carousel-img']} />
                     <div className={styles['left']}>
                       <h3 className={styles['carousel-title']}>
                         Conveying your message is essential
@@ -184,7 +184,7 @@ export default class Benefit extends PureComponent {
                       transform: `translateX(${props.xPos}%)`
                     }}
                   >
-                    <img alt='Long discussions can hunger your audience' src={require('../../../../static/images/slide_3.jpg')} className={styles['carousel-img']} />
+                    <img alt='Long discussions can hunger your audience' src={require('../../../../static/images/production/slide_3.jpg')} className={styles['carousel-img']} />
                     <div className={styles['left']}>
                       <h3 className={styles['carousel-title']}>
                         Long discussions can hunger your audience

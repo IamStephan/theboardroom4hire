@@ -34,7 +34,7 @@ export default class Value extends PureComponent {
   render() {
     return (
       <section className={styles['value']}>
-        <img alt='Hero Showing The Purpose' src={require('../../../../static/images/slide_1.jpg')} className={styles['value-img']} />
+        <img alt='Hero Showing The Purpose' src={require('../../../../static/images/production/slide_1.jpg')} className={styles['value-img']} />
         <div className={styles['left']}>
           <h1 className={styles['value-header']}>
             Giving you the floor for top class discussions

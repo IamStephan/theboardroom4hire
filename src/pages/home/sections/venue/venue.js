@@ -152,10 +152,10 @@ export default class Venue extends PureComponent {
                           }}
                         >
                           <div className={styles['carousel-img']}>
-                            <img alt='slide 1' src={require('../../../../static/images/slide_1.jpg')} />
+                            <img alt='slide 1' src={require('../../../../static/images/production/slide_1.jpg')} />
                           </div>
                           <div className={styles['carousel-img']}>
-                            <img alt='slide 2' src={require('../../../../static/images/slide_2.jpg')} />
+                            <img alt='slide 2' src={require('../../../../static/images/production/slide_2.jpg')} />
                           </div>
                         </div>
                       )}
@@ -174,10 +174,10 @@ export default class Venue extends PureComponent {
                           }}
                         >
                           <div className={styles['carousel-img']}>
-                            <img alt='slide 3' src={require('../../../../static/images/slide_3.jpg')} />
+                            <img alt='slide 3' src={require('../../../../static/images/production/slide_3.jpg')} />
                           </div>
                           <div className={styles['carousel-img']}>
-                            <img alt='slide 4' src={require('../../../../static/images/slide_2.jpg')} />
+                            <img alt='slide 4' src={require('../../../../static/images/production/slide_2.jpg')} />
                           </div>
                         </div>
                       )}
